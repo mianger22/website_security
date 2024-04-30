@@ -46,7 +46,7 @@
 Буду рад обратной связи. Оставляйте пожелания по улучшению или выявленные ошибки: https://github.com/mianger22/website_security/issues. Так я смогу быстрее развивать проект.
 
 
-## Version 3.2.2
+## Version 3.2.3
 
 ### История изменений (RU)
 
@@ -59,7 +59,7 @@
 
 ## Авторство
 
-Автор: Устинов Дмитрий Сергеевич (место и дата рождения: РФ, обл. Тверская, г. Бологое; 09.06.1995)
-Контакты: test666777888999@yandex.ru, https://t.me/moyustimov, https://vk.com/moyustimov
+Автор: Устинов Дмитрий Сергеевич (место и дата рождения: РФ, обл. Тверская, г. Бологое; 09.06.1995).
+Код использует библиотеку [shortcuts](https://www.npmjs.com/package/shortcuts), написанную Fabio Spampinato. 
 
-Код использует библиотеку shortcuts, доступную по адресу https://www.npmjs.com/package/shortcuts, написанную Fabio Spampinato. 
+test666777888999@yandex.ru | https://t.me/moyustimov | https://vk.com/moyustimov
