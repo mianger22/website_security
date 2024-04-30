@@ -48,15 +48,15 @@
 Буду рад обратной связи. Оставляйте пожелания по улучшению или выявленные ошибки: https://github.com/mianger22/website_security/issues. Так я смогу быстрее развивать проект.
 
 
-## Version 3.3.4
+## Version 3.4.0
 
 ### История изменений (RU)
 
-1. Подредактировал readme-файл
+1. Запретил выделение текста, чтобы невозможно было скопировать его
 
 ### Changelog (EN)
 
-1. Edited the readme file
+1. I forbade the selection of text so that it would be impossible to copy it
 
 
 ## Авторство

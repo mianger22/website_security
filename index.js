@@ -101,12 +101,15 @@ const keyboardShortcuts = {
   }
 };
 
-// Примеры регистрации клавиатурных сокращений
+// Блокируем нажатие горячих клавиш для доступа к коду
 keyboardShortcuts.add("Ctrl+U", () => alert("Доступ к коду запрещён"));
 keyboardShortcuts.add("Meta+Alt+U", () => alert("Копирование запрещено"));
 keyboardShortcuts.add("Ctrl+C", () => alert("Копирование запрещено"));
 keyboardShortcuts.add("Meta+C", () => alert("Копирование запрещено"));
 keyboardShortcuts.add("F12", () => alert("Открытие консоли запрещено"));
+
+// Запрещаем выделять текст, чтобы невозможно было его скопировать
+document.body.onselectstart = () => false;
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  legal and contact information  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
