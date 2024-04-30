@@ -1,8 +1,8 @@
 {
   "name": "website_security",
-  "version": "3.2.1",
+  "version": "3.2.2",
   "description": "Защита Вашего сайта от копирования конкурентами [Protecting your site from being copied by competitors]",
   "main": "index.js",
-  "author": "Устинов Дмитрий Сергеевич",
+  "author": "Устинов Дмитрий Сергеевич < https://github.com/mianger22 >",
   "license": "GNU AGPLv3"
 }
