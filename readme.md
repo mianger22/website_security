@@ -46,15 +46,15 @@
 Буду рад обратной связи. Оставляйте пожелания по улучшению или выявленные ошибки: https://github.com/mianger22/website_security/issues. Так я смогу быстрее развивать проект.
 
 
-## Version 3.2.3
+## Version 3.3.3
 
 ### История изменений (RU)
 
-1. Подредактировал readme-файл
+1. Добавил keywords проекту
 
 ### Changelog (EN)
 
-1. Edited the readme file
+1. Added keywords to the project
 
 
 ## Авторство
