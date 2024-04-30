@@ -1,3 +1,6 @@
+// Подключаем остальные скрипты
+import context_menu from "context_menu.js";
+
 // Переменная keyboardShortcuts хранит объект с методами для работы с клавиатурными сокращениями
 const keyboardShortcuts = {
   // Объект allShortcuts хранит все зарегистрированные клавиатурные сокращения
@@ -112,6 +115,9 @@ keyboardShortcuts.add("F12", () => alert("Открытие консоли зап
 document.body.onselectstart = () => false;
 // Закрываем доступ к контекстному меню для устранения возможности получить доступ к коду
 document.oncontextmenu = () => false;
+
+// Заменяем на собственное контекстное меню
+context_menu();
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  legal and contact information  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
