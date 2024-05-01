@@ -181,4 +181,4 @@ document.oncontextmenu = () => false;
 // Контакты: test666777888999@yandex.ru, https://t.me/moyustimov, https://vk.com/moyustimov
 // Официальный репозиторий проекта: https://www.npmjs.com/package/website_security
 
-// Код использует библиотеку shortcuts, доступную по адресу https://www.npmjs.com/package/shortcuts, написанную Fabio Spampinato. 
+// Код использует библиотеку shortcuts, доступную по адресу https://www.npmjs.com/package/shortcuts, написанную Fabio Spampinato
