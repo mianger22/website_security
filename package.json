@@ -1,6 +1,6 @@
 {
   "name": "website_security",
-  "version": "3.6.6",
+  "version": "3.6.7",
   "description": "Защита Вашего сайта от копирования конкурентами [Protecting your site from being copied by competitors]",
   "main": "index.js",
   "author": "Устинов Дмитрий Сергеевич < https://github.com/mianger22 >",

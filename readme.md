@@ -33,24 +33,22 @@
 
 **Работает только c JavaScript**
 
-Чтобы использовать, достаточно подключить одной строкой в **index.html** в разделе **head**:
-
-> `<script src="https://unpkg.com/website_security@3.6.6"></script>`
+Чтобы использовать, достаточно подключить одной строкой в разделе **head** файла **index.html**:
+`<script src="https://unpkg.com/website_security@3.6.6"></script>`
 
 Или, если Ваш сайт написан на ReactJS, Vue, Angular или любой другой библиотеке/фреймворке, или просто желаете установить через npm,  
 1. устанавливаете - `npm install website_security` (пишете в терминале, в корневой папке проекта) 
-2. подключаете - `import 'website_security'` (пишете в корневом файле javascript - в файле используемом в качестве точки входа для приложения - index.js или main.js)
+2. подключаете - `import "website_security"` (пишете в корневом файле javascript - в файле используемом в качестве точки входа для приложения - index.js или main.js)
 
-**Внимание!** Я периодически выпускаю обновления, поэтому следите за версиями. И следовательно - за строкой подключения. То есть при версии 11.9.0 - нужно будет заменить действующую строку подключения на 
-`<script src="https://unpkg.com/website_security@11.9.0"></script>`
+**Внимание!** Я периодически улучшаю и обновляю свой проект. Поэтому следите за версиями и за строкой подключения. Например, если у Вас установлена версия 13.9.0, то Вам нужно будет заменить текущую строку подключения на `<script src="https://unpkg.com/website_security@13.9.0"></script>`.
 
 
 ## Feedback
 
-Буду рад обратной связи. Оставляйте пожелания по улучшению или выявленные ошибки: [здесь](https://github.com/mianger22/website_security/issues). Так я смогу быстрее развивать проект.
+Буду рад обратной связи. Оставляйте [здесь](https://github.com/mianger22/website_security/issues) пожелания по улучшению или выявленные ошибки. Так я смогу быстрее развивать проект.
 
 
-## Version 3.6.6
+## Version 3.6.7
 
 ### История изменений (RU)
 
@@ -67,4 +65,4 @@
 Код использует библиотеку [shortcuts](https://www.npmjs.com/package/shortcuts), написанную Fabio Spampinato. 
 
 
-[Email](mailto:test666777888999@yandex.ru) | [telegram](https://t.me/moyustimov) | [vk](https://vk.com/moyustimov)
+[Email](mailto:test666777888999@yandex.ru) | [Telegram](https://t.me/moyustimov) | [VK](https://vk.com/moyustimov)
