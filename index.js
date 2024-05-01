@@ -1,5 +1,5 @@
 // Подключаем остальные скрипты
-import context_menu from "context_menu.js";
+const context_menu = require('context_menu.js');
 
 // Переменная keyboardShortcuts хранит объект с методами для работы с клавиатурными сокращениями
 const keyboardShortcuts = {

@@ -1,4 +1,4 @@
-export default function context_menu() {
+module.exports = function context_menu() {
   // Создаем контейнер для контекстного меню
   const contextMenu = document.createElement('div');
   contextMenu.id = 'contextMenu';
