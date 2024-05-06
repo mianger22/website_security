@@ -34,7 +34,7 @@
 **Работает только c JavaScript**
 
 Чтобы использовать, достаточно подключить одной строкой в разделе **head** файла **index.html**:
-`<script src="https://unpkg.com/website_security@3.6.10"></script>`
+`<script src="https://unpkg.com/website_security@3.7.0"></script>`
 
 Или, если Ваш сайт написан на ReactJS, Vue, Angular или любой другой библиотеке/фреймворке, или просто желаете установить через npm,  
 1. устанавливаете (пишете в терминале, в корневой папке проекта): 
@@ -52,15 +52,15 @@
 Буду рад обратной связи. Оставляйте [здесь](https://github.com/mianger22/website_security/issues) пожелания по улучшению или выявленные ошибки. Так я смогу быстрее развивать проект.
 
 
-## Version 3.6.10
+## Version 3.7.0
 
 ### История изменений (RU)
 
-1. Подредактировал readme
+1. Переделал кастомное меню
 
 ### Changelog (EN)
 
-1. Edited the readme
+1. Redesigned the custom menu
 
 
 ## Авторство

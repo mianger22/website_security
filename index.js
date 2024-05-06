@@ -116,63 +116,60 @@ document.oncontextmenu = () => false;
 
 // Заменяем на собственное контекстное меню
 (function custom_context_menu() {
-  // Создаем контейнер для контекстного меню
-  const contextMenu = document.createElement('div');
-  contextMenu.id = 'contextMenu';
-  contextMenu.style.display = 'none';
-  contextMenu.style.position = 'absolute';
-  contextMenu.style.backgroundColor = '#fff';
-  contextMenu.style.border = '1px solid #ccc';
-  contextMenu.style.padding = '5px';
-
-  // Создаем список пунктов меню
-  const menuList = document.createElement('ul');
-  menuList.id = "menuList";
-
-  // Создаем первый пункт меню
-  const menuItem1 = document.createElement('li');
-  menuItem1.id = "menuItem1";
-  const menuItemLink1 = document.createElement('a');
-  menuItemLink1.id = "menuItemLink1";
-  menuItemLink1.href = '#';
-  menuItemLink1.innerText = 'Пункт меню 1';
-  menuItemLink1.addEventListener('click', () => {
-    alert('Вы выбрали пункт меню 1');
-  });
-  menuItem1.appendChild(menuItemLink1);
-
-  // Добавляем пункт меню в список
-  menuList.appendChild(menuItem1);
-
-  // Добавляем список в контейнер
-  contextMenu.appendChild(menuList);
-
-  // Добавляем контейнер в документ
-  document.body.appendChild(contextMenu);
-
-  // -------------------
-
-  // Показать контекстное меню при клике правой кнопкой мыши
-  document.addEventListener('contextmenu', function(event) {
-    event.preventDefault();
-    var contextMenu = document.getElementById('contextMenu');
-    contextMenu.style.left = event.pageX + 'px';
-    contextMenu.style.top = event.pageY + 'px';
-    contextMenu.style.display = 'block';
-  });
-
-  // Скрыть контекстное меню при клике вне его области
-  document.addEventListener('click', function(event) {
-    var contextMenu = document.getElementById('contextMenu');
-    if (event.target != contextMenu) {
-      contextMenu.style.display = 'none';
+  // Создаем стили для меню
+  const style = document.createElement('style');
+  style.innerHTML = `
+    .menu {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      padding: 12px;
+      z-index: 1;
     }
-  });
-
-  // Обработчики для выбора пунктов меню
-  document.getElementById('menuItem1').addEventListener('click', function(event) {
-    // Выполнить действие для пункта меню 1
-  });
+    .menu a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .menu a:hover {
+      background-color: #f1f1f1;
+    }
+  `;
+  document.head.appendChild(style); // Применяем стили к документу
+  
+  // Создаем HTML-код для меню
+  const menuDiv = document.createElement('div'); // Создаем новый элемент div
+  menuDiv.id = 'myMenu'; // Устанавливаем id для нового элемента
+  menuDiv.classList.add('menu'); // Используем метод classList для добавления класса
+  menuDiv.innerHTML = `
+    <a href="#" onclick="window.open('${window.location.href}','_blank');">Открыть в новой вкладке</a>
+    <a href="#">Сохранить как...</a>
+    <a href="mailto:youremail@example.com">Отправить по электронной почте</a>
+    <a href="#" id="print">Печать</a>
+  `;
+  document.body.appendChild(menuDiv); // Добавляем новый элемент в конец body
+  
+  // Добавляем обработчик событий для показа/скрытия меню
+  document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+    const menu = document.getElementById('myMenu');
+    menu.style.display = 'block';
+    menu.style.left = e.pageX + 'px';
+    menu.style.top = e.pageY + 'px';
+    return false;
+  }); // Отменяем стандартное поведение правой кнопки мыши
+  
+  document.addEventListener('click', function(e) {
+    const menu = document.getElementById('myMenu');
+    menu.style.display = 'none';
+  }); // Скрываем меню при клике
+  
+  document.getElementById('print').addEventListener('click', function(e) {
+    window.print();
+  }); // Добавляем обработчик для кнопки "Печать"  
 })();
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  legal and contact information  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
