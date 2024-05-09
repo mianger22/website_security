@@ -114,9 +114,7 @@ document.addEventListener("keydown", e => {
 });
 
 // Запрещаем выделять текст, чтобы невозможно было его скопировать
-if (document.body !== null) {
-  document.body.onselectstart = () => false;
-}
+document.body.onselectstart = () => false;
 
 // Переделываем стандартное контекстное меню
 (function custom_context_menu() {
@@ -161,7 +159,7 @@ if (document.body !== null) {
     Хотите меню? Пишите на <a href="mailto:moyustimov@vk.com">moyustimov@vk.com</a>
   `;
   // Добавляем его в конец body
-  document.body !== null && document.body.appendChild(menuDiv); 
+  document.body.appendChild(menuDiv); 
 
   // Добавляем обработчик событий для показа меню
   document.addEventListener('contextmenu', function(e) {
