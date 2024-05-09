@@ -109,7 +109,9 @@ keyboardShortcuts.add("Meta+C", () => alert("Копирование запрещ
 keyboardShortcuts.add("Ctrl+Shift+S", () => alert("Запись экрана недопустима"));
 keyboardShortcuts.add("Ctrl+S", () => alert("Сохранение страницы невозможно"));
 keyboardShortcuts.add("Ctrl+P", () => alert("Печать страницы невозможна"));
-keyboardShortcuts.add("F12", () => alert("Открытие консоли запрещено"));
+document.addEventListener("keydown", e => {
+  e.keyCode === 123 && (e.preventDefault(), alert("Доступ к консоли браузера запрещён"));
+});
 
 // Запрещаем выделять текст, чтобы невозможно было его скопировать
 document.body.onselectstart = () => false;

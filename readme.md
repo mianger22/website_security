@@ -48,17 +48,15 @@
 Буду рад обратной связи. Оставляйте [здесь](https://github.com/mianger22/website_security/issues) пожелания по улучшению или выявленные ошибки. Так я смогу быстрее развивать проект.
 
 
-## Version 4.0.0
+## Version 4.0.1
 
 ### История изменений (RU)
 
-1. Контент кастомного контекстного меню сделан персональным. Само меню стало визуально лучше.
-2. Добавлен запрет на запись экрана, печать и сохранение страницы блокировкой соответствующих горячих клавиш.
+1. Починил блокировку нажатия F12. До этого блокировались все F-клавиши.
 
 ### Changelog (EN)
 
-1. The content of the custom context menu is made personal. The menu itself has become visually better.
-2. Added a ban on recording the screen and saving the page by locking the corresponding hotkeys.
+1. Fixed the F12 press lock. Before that, all F-keys were blocked.
 
 
 ## Авторство
