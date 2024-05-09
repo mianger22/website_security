@@ -102,15 +102,15 @@ const keyboardShortcuts = {
 };
 
 // Блокируем нажатие горячих клавиш для доступа к коду
-keyboardShortcuts.add("Ctrl+U", () => alert("Доступ к коду запрещён"));
-keyboardShortcuts.add("Meta+Alt+U", () => alert("Копирование запрещено"));
-keyboardShortcuts.add("Ctrl+C", () => alert("Копирование запрещено"));
-keyboardShortcuts.add("Meta+C", () => alert("Копирование запрещено"));
-keyboardShortcuts.add("Ctrl+Shift+S", () => alert("Запись экрана недопустима"));
-keyboardShortcuts.add("Ctrl+S", () => alert("Сохранение страницы невозможно"));
-keyboardShortcuts.add("Ctrl+P", () => alert("Печать страницы невозможна"));
+keyboardShortcuts.add("Ctrl+U", () => false);
+keyboardShortcuts.add("Meta+Alt+U", () => false);
+keyboardShortcuts.add("Ctrl+C", () => false);
+keyboardShortcuts.add("Meta+C", () => false);
+keyboardShortcuts.add("Ctrl+Shift+S", () => false);
+keyboardShortcuts.add("Ctrl+S", () => false);
+keyboardShortcuts.add("Ctrl+P", () => false);
 document.addEventListener("keydown", e => {
-  e.keyCode === 123 && (e.preventDefault(), alert("Доступ к консоли браузера запрещён"));
+  e.keyCode === 123 && e.preventDefault();
 });
 
 // Запрещаем выделять текст, чтобы невозможно было его скопировать
@@ -162,7 +162,7 @@ document.body.onselectstart = () => false;
   document.body.appendChild(menuDiv); 
 
   // Добавляем обработчик событий для показа меню
-  document.addEventListener('contextmenu', function(e) {
+  document.addEventListener('contextmenu', e => {
     // Закрываем доступ к стандартному контекстному меню для устранения возможности получить доступ к коду
     e.preventDefault(); 
     // Меняем на кастомное

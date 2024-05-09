@@ -1,6 +1,6 @@
 {
   "name": "website_security",
-  "version": "4.1.0",
+  "version": "5.0.0",
   "description": "Защита сайта от копирования [Copy protection of the site]",
   "main": "index.js",
   "author": "Устинов Дмитрий Сергеевич [test666777888999@yandex.ru]",

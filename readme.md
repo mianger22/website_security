@@ -48,15 +48,15 @@
 Буду рад обратной связи. Оставляйте [здесь](https://github.com/mianger22/website_security/issues) пожелания по улучшению или выявленные ошибки. Так я смогу быстрее развивать проект.
 
 
-## Version 4.1.0
+## Version 5.0.0
 
 ### История изменений (RU)
 
-1. Улучшил readme.
+1. Удалил все alert, потому что с помощью них можно было получить доступ к коду.
 
 ### Changelog (EN)
 
-1. Improved the readme.
+1. I deleted all the alerts because they could be used to access the code.
 
 
 ## Авторство
