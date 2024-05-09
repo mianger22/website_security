@@ -48,15 +48,15 @@
 Буду рад обратной связи. Оставляйте [здесь](https://github.com/mianger22/website_security/issues) пожелания по улучшению или выявленные ошибки. Так я смогу быстрее развивать проект.
 
 
-## Version 4.0.3
+## Version 4.0.1
 
 ### История изменений (RU)
 
-1. Продолжил устранять ошибку, на этот раз новую...
+1. Починил блокировку нажатия F12. До этого блокировались все F-клавиши.
 
 ### Changelog (EN)
 
-1. I continued to fix the error, this time a new one...
+1. Fixed the F12 press lock. Before that, all F-keys were blocked.
 
 
 ## Авторство
