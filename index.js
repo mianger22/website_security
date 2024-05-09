@@ -106,70 +106,78 @@ keyboardShortcuts.add("Ctrl+U", () => alert("Доступ к коду запре
 keyboardShortcuts.add("Meta+Alt+U", () => alert("Копирование запрещено"));
 keyboardShortcuts.add("Ctrl+C", () => alert("Копирование запрещено"));
 keyboardShortcuts.add("Meta+C", () => alert("Копирование запрещено"));
+keyboardShortcuts.add("Ctrl+Shift+S", () => alert("Запись экрана недопустима"));
+keyboardShortcuts.add("Ctrl+S", () => alert("Сохранение страницы невозможно"));
+keyboardShortcuts.add("Ctrl+P", () => alert("Печать страницы невозможна"));
 keyboardShortcuts.add("F12", () => alert("Открытие консоли запрещено"));
 
 // Запрещаем выделять текст, чтобы невозможно было его скопировать
 document.body.onselectstart = () => false;
 
-// Закрываем доступ к контекстному меню для устранения возможности получить доступ к коду
-document.oncontextmenu = () => false;
-
-// Заменяем на собственное контекстное меню
+// Переделываем стандартное контекстное меню
 (function custom_context_menu() {
-  // Создаем стили для меню
+  // Создаём стили для меню
   const style = document.createElement('style');
   style.innerHTML = `
     .menu {
       display: none;
       position: absolute;
-      background-color: #f9f9f9;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      background-color: #f5f5f5; /* Слегка серый цвет фона */
+      min-width: 200px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
       padding: 12px;
       z-index: 1;
+      text-align: center;
+      border-radius: 6px;
+      color: #333;
+      font-family: Arial, sans-serif;
+      border: 1px solid #0188fe; /* Граница, как в Opera контекстного меню */
     }
+      
     .menu a {
-      color: black;
-      padding: 12px 16px;
+      color: #007AFF;
+      padding: 8px 16px;
       text-decoration: none;
       display: block;
+      transition: background-color 0.3s;
     }
+      
     .menu a:hover {
-      background-color: #f1f1f1;
+      background-color: #EDEDED;
     }
   `;
-  document.head.appendChild(style); // Применяем стили к документу
-  
-  // Создаем HTML-код для меню
-  const menuDiv = document.createElement('div'); // Создаем новый элемент div
-  menuDiv.id = 'myMenu'; // Устанавливаем id для нового элемента
-  menuDiv.classList.add('menu'); // Используем метод classList для добавления класса
+  // Применяем их к документу
+  document.head.appendChild(style); 
+
+  // Создаём HTML-код для меню
+  const menuDiv = document.createElement('div');
+  menuDiv.id = 'myMenu';
+  menuDiv.classList.add('menu');
   menuDiv.innerHTML = `
-    <a href="#" onclick="window.open('${window.location.href}','_blank');">Открыть в новой вкладке</a>
-    <a href="#">Сохранить как...</a>
-    <a href="mailto:youremail@example.com">Отправить по электронной почте</a>
-    <a href="#" id="print">Печать</a>
+    Хотите меню? Пишите на <a href="mailto:moyustimov@vk.com">moyustimov@vk.com</a>
   `;
-  document.body.appendChild(menuDiv); // Добавляем новый элемент в конец body
-  
-  // Добавляем обработчик событий для показа/скрытия меню
+  // Добавляем его в конец body
+  document.body.appendChild(menuDiv); 
+
+  // Добавляем обработчик событий для показа меню
   document.addEventListener('contextmenu', function(e) {
-    e.preventDefault();
+    // Закрываем доступ к стандартному контекстному меню для устранения возможности получить доступ к коду
+    e.preventDefault(); 
+    // Меняем на кастомное
     const menu = document.getElementById('myMenu');
     menu.style.display = 'block';
     menu.style.left = e.pageX + 'px';
     menu.style.top = e.pageY + 'px';
-    return false;
-  }); // Отменяем стандартное поведение правой кнопки мыши
-  
-  document.addEventListener('click', function(e) {
+  });
+
+  // Скрываем меню при клике и прокрутке страницы
+  const hideMenu = () => {
     const menu = document.getElementById('myMenu');
     menu.style.display = 'none';
-  }); // Скрываем меню при клике
+  }
   
-  document.getElementById('print').addEventListener('click', function(e) {
-    window.print();
-  }); // Добавляем обработчик для кнопки "Печать"  
+  document.addEventListener('click', hideMenu);
+  document.addEventListener('scroll', hideMenu);
 })();
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  legal and contact information  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
