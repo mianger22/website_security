@@ -1,7 +1,7 @@
 {
   "name": "website_security",
-  "version": "4.0.1",
-  "description": "Защита Вашего сайта от копирования [Protecting your site from being copied]",
+  "version": "4.1.0",
+  "description": "Защита сайта от копирования [Copy protection of the site]",
   "main": "index.js",
   "author": "Устинов Дмитрий Сергеевич [test666777888999@yandex.ru]",
   "license": "GNU AGPLv3",

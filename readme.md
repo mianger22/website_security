@@ -33,7 +33,7 @@
 
 **Работает только c JavaScript**
 
-Чтобы использовать, достаточно подключить одной строкой в разделе **head** файла **index.html**:
+Чтобы использовать, достаточно написать перед закрывающим тегом **</body>** файла **index.html**:
 `<script src="https://unpkg.com/website_security@latest"></script>`
 
 Или, если Ваш сайт написан на ReactJS, Vue, Angular или любой другой библиотеке/фреймворке, или просто желаете установить через npm,  
@@ -48,15 +48,15 @@
 Буду рад обратной связи. Оставляйте [здесь](https://github.com/mianger22/website_security/issues) пожелания по улучшению или выявленные ошибки. Так я смогу быстрее развивать проект.
 
 
-## Version 4.0.1
+## Version 4.1.0
 
 ### История изменений (RU)
 
-1. Починил блокировку нажатия F12. До этого блокировались все F-клавиши.
+1. Улучшил readme.
 
 ### Changelog (EN)
 
-1. Fixed the F12 press lock. Before that, all F-keys were blocked.
+1. Improved the readme.
 
 
 ## Авторство
