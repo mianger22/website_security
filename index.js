@@ -161,7 +161,7 @@ if (document.body !== null) {
     Хотите меню? Пишите на <a href="mailto:moyustimov@vk.com">moyustimov@vk.com</a>
   `;
   // Добавляем его в конец body
-  document.body.appendChild(menuDiv); 
+  document.body !== null && document.body.appendChild(menuDiv); 
 
   // Добавляем обработчик событий для показа меню
   document.addEventListener('contextmenu', function(e) {

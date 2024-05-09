@@ -48,15 +48,15 @@
 Буду рад обратной связи. Оставляйте [здесь](https://github.com/mianger22/website_security/issues) пожелания по улучшению или выявленные ошибки. Так я смогу быстрее развивать проект.
 
 
-## Version 4.0.2
+## Version 4.0.3
 
 ### История изменений (RU)
 
-1. Столкнулся с ошибкой в 117 строке кода, начал чинить...
+1. Продолжил устранять ошибку, на этот раз новую...
 
 ### Changelog (EN)
 
-1. I encountered an error in line 117 of the code, and started fixing it...
+1. I continued to fix the error, this time a new one...
 
 
 ## Авторство
