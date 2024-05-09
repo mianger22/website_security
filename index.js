@@ -114,7 +114,9 @@ document.addEventListener("keydown", e => {
 });
 
 // Запрещаем выделять текст, чтобы невозможно было его скопировать
-document.body.onselectstart = () => false;
+if (document.body !== null) {
+  document.body.onselectstart = () => false;
+}
 
 // Переделываем стандартное контекстное меню
 (function custom_context_menu() {
