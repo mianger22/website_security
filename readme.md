@@ -33,7 +33,7 @@
 
 **Работает только c JavaScript**
 
-Чтобы использовать, достаточно написать перед закрывающим тегом **</body>** файла **index.html**:
+Чтобы использовать, достаточно написать после открывающего тега **head** файла **index.html**:
 `<script src="https://unpkg.com/website_security@latest"></script>`
 
 Или, если Ваш сайт написан на ReactJS, Vue, Angular или любой другой библиотеке/фреймворке, или просто желаете установить через npm,  
@@ -48,15 +48,15 @@
 Буду рад обратной связи. Оставляйте [здесь](https://github.com/mianger22/website_security/issues) пожелания по улучшению или выявленные ошибки. Так я смогу быстрее развивать проект.
 
 
-## Version 5.1.0
+## Version 5.1.1
 
 ### История изменений (RU)
 
-1. Я изменил код так, чтобы он запускался сразу при открытии сайта, а не дожидался полной загрузки страницы. Это помешает злоумышленникам получить доступ к коду на первых секундах загрузки страницы.
+1. Исправил ошибочную инструкцию в readme.
 
 ### Changelog (EN)
 
-1. I modified the code so that it starts running as soon as the site is opened, instead of waiting for the page to fully load. This change will prevent attackers from accessing the code during the initial seconds of page loading.
+1. Corrected the erroneous instruction in the readme.
 
 
 ## Авторство
