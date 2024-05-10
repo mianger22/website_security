@@ -48,15 +48,15 @@
 Буду рад обратной связи. Оставляйте [здесь](https://github.com/mianger22/website_security/issues) пожелания по улучшению или выявленные ошибки. Так я смогу быстрее развивать проект.
 
 
-## Version 5.0.0
+## Version 5.1.0
 
 ### История изменений (RU)
 
-1. Удалил все alert, потому что с помощью них можно было получить доступ к коду.
+1. Я изменил код так, чтобы он запускался сразу при открытии сайта, а не дожидался полной загрузки страницы. Это помешает злоумышленникам получить доступ к коду на первых секундах загрузки страницы.
 
 ### Changelog (EN)
 
-1. I deleted all the alerts because they could be used to access the code.
+1. I modified the code so that it starts running as soon as the site is opened, instead of waiting for the page to fully load. This change will prevent attackers from accessing the code during the initial seconds of page loading.
 
 
 ## Авторство
@@ -65,4 +65,4 @@
 Код использует библиотеку [shortcuts](https://www.npmjs.com/package/shortcuts), написанную Fabio Spampinato. 
 
 
-[Email](mailto:test666777888999@yandex.ru) | [Telegram](https://t.me/moyustimov) | [VK](https://vk.com/moyustimov)
+[Email](mailto:moyustimov@vk.com) | [Telegram](https://t.me/moyustimov) | [VK](https://vk.com/moyustimov)
